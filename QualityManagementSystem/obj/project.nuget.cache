@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/8u01TUvYzIyjB+1cUJKXndpV9M/GmNmEkLnrVJQVKzMN4K1JsZcMEVgV+ka/ZIRx+GtXJUHlC3YKr1EtL8V4A==",
+  "dgSpecHash": "DcEtwdNfH2zoJz+OgozqbSJns9W/fajEkDylAjif8kk0+UQmDssnYRFqNMl/l4q2PukXclQPPnMMCH6WWZcjeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lhamad\\source\\repos\\QualityManagementSystem\\QualityManagementSystem\\QualityManagementSystem.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Lhamad\\Desktop\\QualityManagementSystem\\QualityManagementSystem\\QualityManagementSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lhamad\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

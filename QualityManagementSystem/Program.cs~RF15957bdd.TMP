@@ -12,8 +12,8 @@ namespace QualityManagementSystem
             bool endApp = false;
 
             Console.WriteLine("Please enter the number to the option you would like to do!");
-            Console.WriteLine("Enter Part to enter a new part,  Enter employee to enter a new employee, enter tool to enter a new tool or break to exit.", Environment.NewLine);
-            
+            Console.WriteLine("Enter Part to enter a new part,  Enter employee to enter a new employee, enter tool to enter a new tool or break to exit.");
+            Console.WriteLine("/n");
             //User Inputs: 
             userinput = Console.ReadLine();
             UppercaseUserInput = userinput.ToUpper();
@@ -34,15 +34,6 @@ namespace QualityManagementSystem
                     else if (UppercaseUserInput == "TOOL")
                     {
                         Console.WriteLine("You picked Employee!");
-                    }
-                    else if (UppercaseUserInput == "ASSEMBLY")
-                    {
-                      
-
-                        Assmblies program = new Assmblies();
-                        program.CreateAssembly();
-                        program.AddAssembliesToList();
-
                     }
                     else if (UppercaseUserInput == "BREAK")
                     {

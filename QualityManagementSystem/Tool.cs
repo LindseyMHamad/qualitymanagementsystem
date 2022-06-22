@@ -24,6 +24,7 @@ namespace QualityManagementSystem
 
         public int MachineId { get; private set; }
         public string MachineName { get; set; }
+        public int MachineType { get; set; }
         public int severity { get; set; }
         public int occurance { get; set; }
         public int RPN { get; set; }
