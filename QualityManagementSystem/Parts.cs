@@ -3,36 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CsvHelper.Configuration.Attributes;
+using CsvHelper;
+using System.Globalization;
+using System.IO;
+using CsvHelper.Configuration;
 
 namespace QualityManagementSystem
 {
     public class Parts
     {
 
-        public Parts()
+       
+
+        public string AssemblyId { get; set; }
+        //  [Index(1)]
+        public string AssemblyName { get; set; }
+        // [Index(2)]
+        public string Revision { get; set; }
+
+
+
+        
+
+        public static void ReadAssembliesFromList()
         {
 
-        }
 
-        public Parts(int partnumberid)
-        {
-            PartNumberId = partnumberid;
-        }
+            var lines = File.ReadAllLines(@"C:\Users\Lhamad\Desktop\QualityManagementSystem\assemblies.csv");
+            var list = new List<Parts>(); // this will be the list of out assemblies
+            foreach (var line in lines)
+            {
+                var values = line.Split(',');
+                var assembly = new Parts() { AssemblyId = values[0], AssemblyName = values[1], Revision = values[2] }; // mapping back to the class
+                list.Add(assembly); //adding the assemblies to the list
 
-        public int PartNumberId { get; private set; }
-        public string PartName { get; set; }
-        public decimal PurchasePrice { get; set; }
-        public int NumberofVariations { get; set; }
-        public char Revision { get; set; }
-
-              
-
-        public bool Valid()
-        {
-            var isValid = true;
-            if (string.IsNullOrWhiteSpace(PartName)) isValid = false;
-            //if the string for the employee name is null or whitespace the isValid changes from true to false
-            return isValid;
+            }
+            list.ForEach(x => Console.WriteLine($"{x.AssemblyId}\t{x.AssemblyName}\t{x.Revision}")); //print the list of all of our records from our assemblies object
         }
     }
 }
