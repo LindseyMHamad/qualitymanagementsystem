@@ -19,27 +19,20 @@ namespace QualityManagementSystem
         public List<SpareParts> listofspareparts = new List<SpareParts>();
 
 
-        public Machine(string name, decimal Qty, double accuracyinstandard, double accuracyinmetric, DateTime maintenancedue)
+        public Machine(string name, decimal Qty, double lengthinstandard, double accuracyinmetric, DateTime maintenancedue)
         {
             machineName = name;
-            replaceMachineParts(Qty, name, accuracyinstandard, accuracyinmetric, DateTime.Now, maintenancedue);
+            //replaceMachineParts(Qty, name, accuracyinstandard, accuracyinmetric, DateTime.Now, maintenancedue);
             this.machineNumber = machineID.ToString();
             machineID++;
 
         }
 
-        public void replaceMachineParts(decimal qty, String name, double accuracyinstandard, double accuracyinmetric, DateTime date, DateTime maintenancedue)
-        {
-           
-            var replacepart = new SpareParts(-qty, name, date, accuracyinstandard, accuracyinmetric, maintenancedue);
-                listofspareparts.Add(replacepart);
+      
 
-            
-        }
-
-        public void addToList(decimal qty, String name, double accuracyinstandard, double accuracyinmetric, DateTime date, DateTime maintenancedue)
+        public void addToList(decimal qty, String name, double lengthinstandard, double accuracyinmetric, DateTime date, DateTime maintenancedue)
         {
-            var sparepartslist = new SpareParts(qty, name, date, accuracyinstandard, accuracyinmetric, maintenancedue);
+            var sparepartslist = new SpareParts(qty, name, date, lengthinstandard, accuracyinmetric, maintenancedue);
             listofspareparts.Add(sparepartslist);
 
             
@@ -52,14 +45,16 @@ namespace QualityManagementSystem
 
               foreach(var item in listofspareparts)
              {
-               report.AppendLine($" {item.Qty} \t \t {item.Name} \t \t {item.Date} \t \t {item.MaintenanceDue} \t \t {item.AccuracyInStandard} \t \t {item.AccuracyInMetric}");
+               report.AppendLine($" {item.Qty} \t \t {item.Name} \t \t {item.Date} \t \t {item.MaintenanceDue} \t \t {item.LengthInStandard} \t \t {item.AccuracyInMetric}");
           
               }
             return report.ToString();
             //  listofspareparts.ForEach(i => Console.WriteLine"{0}\t", i);
         }
 
-       
-       
+        
+
     }
+
+   
 }

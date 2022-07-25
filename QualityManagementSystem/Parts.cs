@@ -28,9 +28,9 @@ namespace QualityManagementSystem
 
         public static void ReadAssembliesFromList()
         {
+            var lines = System.IO.File.ReadAllLines(@"assemblies.csv");
 
-
-            var lines = File.ReadAllLines(@"C:\Users\Lhamad\Desktop\QualityManagementSystem\assemblies.csv");
+            //var lines = File.ReadAllLines("assemblies.csv");
             var list = new List<Parts>(); // this will be the list of out assemblies
             foreach (var line in lines)
             {
@@ -41,5 +41,7 @@ namespace QualityManagementSystem
             }
             list.ForEach(x => Console.WriteLine($"{x.AssemblyId}\t{x.AssemblyName}\t{x.Revision}")); //print the list of all of our records from our assemblies object
         }
+
+
     }
 }

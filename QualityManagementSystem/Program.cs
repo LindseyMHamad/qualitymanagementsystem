@@ -38,7 +38,7 @@ namespace QualityManagementSystem
 
 
 
-                        Console.WriteLine("Enter ADD to add item to list or STOP to exit program.");
+                        Console.WriteLine("You will begin adding items to the maintenance list.");
 
                         sparePartsUserInput = Console.ReadLine();
                         while (sparePartsUserInput != "STOP")
@@ -54,7 +54,7 @@ namespace QualityManagementSystem
                                 Console.WriteLine("Enter the Name");
                                 var nameofpart = Console.ReadLine();
 
-                                Console.WriteLine("Enter the precision in inches");
+                                Console.WriteLine("Enter the hose length in inches");
                                 var precision = double.Parse(Console.ReadLine());
 
                                 var percisionMetric = precision * metricConversion;
@@ -73,16 +73,31 @@ namespace QualityManagementSystem
 
                         
                     }
-                    else if (UppercaseUserInput == "EMPLOYEE")
+                    else if (UppercaseUserInput == "DISPLAY")
                     {
 
 
                         Console.WriteLine(sparepartslist.listofSparePartsPrint());
 
                     }
-                    else if (UppercaseUserInput == "TOOL")
+                    else if (UppercaseUserInput == "FLUIDS")
                     {
-                        Console.WriteLine("U picked tool");
+                        Console.WriteLine("Has the time since last replacement been longer than one year?");
+                        var hydraulicFluidUserInput = Console.ReadLine();
+                        if (hydraulicFluidUserInput == "YES")
+                        {
+                            Console.WriteLine("How much Metsol606 will be added to the machine?");
+                            var metsol606Amount = Decimal.Parse(Console.ReadLine());
+
+                            Console.WriteLine("How much hydraulic fluid will be added to the machine?");
+                            var hydraulicfluidAmount = Decimal.Parse(Console.ReadLine());
+
+                            
+
+                            CalculateWaterContent(metsol606Amount, hydraulicfluidAmount);
+
+                            
+                        }
                     }
                     
                     else if (UppercaseUserInput == "READ")
@@ -111,5 +126,20 @@ namespace QualityManagementSystem
 
 
         }
+
+
+        public static decimal CalculateWaterContent(decimal metsol606Amount, decimal hydraulicfluidAmount)
+        {
+            decimal waterContent = ((metsol606Amount * hydraulicfluidAmount) / 2) * 5;
+            Console.WriteLine("Add the below amount of water (gal)");
+            Console.WriteLine(waterContent);
+
+            return waterContent;
+
+            
+
+        }
     }
+
+
 }
