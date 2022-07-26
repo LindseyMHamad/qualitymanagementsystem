@@ -8,7 +8,6 @@ C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debu
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\QualityManagementSystem.runtimeconfig.json
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\QualityManagementSystem.runtimeconfig.dev.json
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\QualityManagementSystem.dll
-C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\ref\QualityManagementSystem.dll
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\QualityManagementSystem.pdb
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debug\net5.0\QualityManagementSystem.dll
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debug\net5.0\ref\QualityManagementSystem.dll
@@ -17,3 +16,4 @@ C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debu
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\CsvHelper.dll
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debug\net5.0\QualityManagementSystem.csproj.CopyComplete
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\assemblies.csv
+C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debug\net5.0\refint\QualityManagementSystem.dll

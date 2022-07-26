@@ -20,7 +20,7 @@ namespace QualityManagementSystem
             DateTime scheduleMaintenance;
 
             Console.WriteLine("Please enter the number to the option you would like to do!");
-            Console.WriteLine("Enter Part to enter a new part,  Enter employee to enter a new employee, enter tool to enter a new tool or break to exit.", Environment.NewLine);
+            Console.WriteLine("Enter List to enter a new part,  Enter Display to display the list, enter fluids to calculate water, Read to read the assemblies file or break to exit.", Environment.NewLine);
             
             //User Inputs: 
             userinput = Console.ReadLine();
