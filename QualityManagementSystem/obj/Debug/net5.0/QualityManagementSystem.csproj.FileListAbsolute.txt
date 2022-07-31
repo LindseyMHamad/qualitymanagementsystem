@@ -16,4 +16,4 @@ C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debu
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\CsvHelper.dll
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debug\net5.0\QualityManagementSystem.csproj.CopyComplete
 C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\assemblies.csv
-C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\obj\Debug\net5.0\refint\QualityManagementSystem.dll
+C:\Users\Lhamad\Desktop\QualityManagementSystem\QualityManagementSystem\bin\Debug\net5.0\ref\QualityManagementSystem.dll

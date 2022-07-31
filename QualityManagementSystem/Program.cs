@@ -109,7 +109,7 @@ namespace QualityManagementSystem
                     {
                         break;
                     }
-                    Console.WriteLine("Enter Part to enter a new part,  Enter employee to enter a new employee, enter tool to enter a new tool or break to exit.");
+                    Console.WriteLine("Enter List to enter a new part,  Enter Display to display the list, enter fluids to calculate water, Read to read the assemblies file or break to exit.");
                     userinput = Console.ReadLine();
                     UppercaseUserInput = userinput.ToUpper();
                     if (UppercaseUserInput == "BREAK")
